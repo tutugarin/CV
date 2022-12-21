@@ -1,55 +1,51 @@
-\documentclass[11pt]{article}
-
-\usepackage[top=1in, bottom=1in, left=0.5in, right=0.5in]{geometry}
-\usepackage{amsfonts}
+\documentclass[11pt,a4paper,sans]{moderncv}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathtext}
+\usepackage[T1,T2A]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[russian]{babel}
+\usepackage[english,bulgarian,ukrainian,russian]{babel}
 
+\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[scale=0.87]{geometry}
+\setlength{\hintscolumnwidth}{3.3cm}           % if you want to change the width of the column with the dates
+
+\firstname{Иван}
+\familyname{Ершов}
+
+\address{Москва}
+\phone{89167199420}
+\email{vanya.tugarin@yandex.ru}
+\renewcommand\refname{Selected publications}
+\nopagenumbers{}
 
 \begin{document}
-\begin{center}
-\thispagestyle{empty}
-\large \textbf{Ершов Иван Петрович \\}    
-\normalsize vanya.ershoff@gmail.com $\diamond$ +7(916)-719-94-20 $\diamond$ github.com/tutugarin   \\
-\hrulefill
-\end{center}
+\makecvtitle
+\section{Образование}
+\cventry{2009 -- 2020}{Средняя Общеобразовательная Школа №3\newline с углубленным изучением английского языка г.о.Жуковский}{}{}{}{}
+\cventry{2020 -- \\настоящее время}{НИУ ВШЭ (Москва)}{\newline Факультет компьтерных наук}{\newline Прикладная математика и информатика (GPA 8,71, Rating 11\%)}{}{}
 
-\noindent \textbf{\underline{ОБРАЗОВАНИЕ}} \\
-\par \textbf{НИУ "Высшая школа экономики"} \hfill 2020 - Настоящее время
-\par Бакалаврская программа \textit{"Прикладная математика и информатика" } 
-\begin{itemize}
-\item[$\ast$] \textbf{Дисциплины}: Алгоритмы и структуры данных, Линейная алгебра, Математический анализ, Дискретная математика, Матричные вычисления, Теория вероятностей, Прикладная статистика для Машинного обучения, Машинное обучение, Глубинное обучение, Распределенные системы, Python в ШАД
+\section{Образовательные курсы}
+\cventry{2015 -- 2020}{курсы робототехники в ЦМИТ}{\newline (конструрование и программирование БПЛА)}{}{}{}
+\cventry{2020 -- 2022}{Алгоритмы и Структуры данных, Архитектура компьютеров, \newline Линейная алгебра,  Математический анализ, Матричные вычисления, \newline Теория Вероятностей, Математическая Статистика}{}{}{}{}
+\cventry{2022}{Школа Финтех при ФКН НИУ ВШЭ,\newline Курс по распознаванию лиц при магистратуре "Машинное обучение и высоконагруженные системы" ФКН НИУ ВШЭ}{}{}{}{}
 
-\item[$\ast$] \textbf{GPA}: 9.0/10 \\
-\end{itemize}
+\section{Навыки работы с компьютером}
+\cvitem{Языки\\программирования}{С++ (STL), C,\newline Python (numpy, seaborn, pandas), SQL}
+\cvitem{Ин}{git, LaTeX, Jupyter}
+\section{Личные данные}
+\cventry{Дата рождения}{5 Июля 2003}{}{Российская Федерация}{}{}
+\cventry{Иностранные\\Языки}{Английский (B2+)}{}{}{}{}
+\section{Немного о себе и проектах}
+С дошкольного возраста изучал английский язык, а так как школа была с углубленным изучением английского языка , то он у меня на высоком уровне. Закончил школу с золотой медалью.
+\\\\
+В университете курс по Алгоритмам и Структурам Данных стал наиболее интересным (оценка 10), поэтому с легкостью могу найти практическое применение различным способам оптимизации в реальных задачах.
+\\\\
+Помимо точных наук я развиваю soft skills: помогаю однокурсникам разбираться в сложных темах, работаю учебным ассистентом по Математическому Анализу у первокурсников, обсуждаю с преподавателями возможность улучшить учебный процесс. 
+\\\\
+Последним проектом, над которым я работал, был «Анализ данных о движении человека». Было необходимо по имеющимся данным акселерометра носимого устройства (смартфон, электронные часы, фитнес-браслет) определить тип движения человека (ходьба, бег, велосипед, автомобиль и так далее)
+\\\\
+Сейчас веду работу над проектом «Система хранения и анализа данных носимых устройств», на котором по пульсу человеку нужно научиться выявлять различные состояния человека, таких как стресс или наличие заболевания. Впоследствии собранные данные могут использоваться для выдачи рекомендаций о приеме лекарств. 
 
-\noindent \textbf{\underline{ПРОЕКТЫ}} \\
-\par \textbf{\large{Система хранения и анализа данных носимых устройств}}
-\begin{itemize}
-\item[$\ast$] Разработка Рекомендательной системы, Анализ сигнала ЭКГ
-\item[$\ast$] \textbf{Стек технологий:} Python3, XGBoost\\
-\end{itemize}
-
-\par \textbf{\large{Построение инвестиционного портфеля акций на основе RL}}
-\begin{itemize}
-\item[$\ast$] Реализация алгоритма глубокого обучения с подкреплением для формирования оптимального портфеля путем автоматизированной торговли на бирже.
-\item[$\ast$] \textbf{Стек технологий:} Python3, PyTorch, Kubeflow \\
-\end{itemize}
-
-\noindent \textbf{\underline{ОПЫТ РАБОТЫ}} \\
-\par \textbf{ООО "Яндекс Технологии"}\hfill 11.01.2022 - 13.06.2022
-\begin{itemize}
-    \item[$\ast$] Стажер-Разработчик, Группа разработки Антиробота
-    \item[$\ast$] \textbf{Стек технологий:} Python2, Python3, C++, gRPC \\
-\end{itemize}
-
-\noindent \textbf{\underline{ТЕХНИЧЕСКИЕ НАВЫКИ}}\\
- \par \textbf{Языки программирования:} \hfill Python3 (numpy, pandas, sklearn, PyTorch), C, C++ (STL), SQL\\
-\par \textbf{Инструменты разработки:} \hfill CLion, PyCharm, VSCode, Git, Jupyter, \LaTeX{}, Shell script \\
-\\
-
-\noindent \textbf{\underline{ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ}} \\
-\par \textbf{Студенческая активность:}\hfill Учебный ассистент по ТВиМС и по АКОС, Куратор\\
-\par \textbf{Владение языками:}\hfill Русский (родной), Английский (B2)
-
-\end{document}
+	\end{document}
